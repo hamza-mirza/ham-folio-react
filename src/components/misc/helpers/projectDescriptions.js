@@ -1,7 +1,7 @@
 const descriptions = {
   weather: {
     text1: "One of the first projects I created while learning React. This app uses the OpenWeatherMap's API service to fetch weather data based on user's input.",
-    text2: "This project uses all of core fundamentals of React - reusable components, props, lifecycle hooks and state. I also created a YouTube tutorial on this project and it has over 200k views. You can check it out here.",
+    text2: "This project uses all of core fundamentals of React - reusable components, props, lifecycle hooks and state. I also created a YouTube tutorial on this project and it has over 200k views. Link to my YouTube channel is in the 'Profile' section on the homepage.",
     url: null
   },
   image: {
