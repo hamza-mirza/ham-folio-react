@@ -1,0 +1,30 @@
+.skills {
+  &__skill {
+    font-weight: 600;
+    font-size: 1.15rem;
+    display: block;
+    @include respond(tablet) {
+      display: block;
+    }
+  }
+
+  &__skillset-box-2 {
+    margin-left: -8rem;
+    @include respond(tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &__gap {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $main-yellow;
+    display: inline-block;
+    line-height: 0.7;
+    margin: 0 0.5rem;
+
+    @include respond(tablet) {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.links {
+  &__icons {
+    margin-top: 2rem;
+    position: relative;
+  }
+  &__icon {
+    &:link, &:visited {
+      font-size: 3.7rem;
+      color: $main-black;
+      line-height: 0;
+      display: inline-block;
+      margin-right: 3.5rem;
+      transition: all 0.3s;
+    }
+    &:hover, &:active {
+      transform: translateY(-1rem);
+    }
+    @include respond(largePhone) {
+      font-size: 3rem !important;
+      margin-right: 1rem !important;
+    }
+    
+  }
+
+  &__icon-youtube {
+    &:hover {
+      color: $youtube-color;
+    }
+  }
+
+  &__icon-insta {
+    &:hover {
+      color: $instagram-color;
+    }
+  }
+}

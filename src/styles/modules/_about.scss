@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.about {
+  &__link {
+    &:link, &:visited { color: $main-black; text-decoration: underline; }
+    &:hover, &:active { color: $main-yellow; }
+  }
+
+  &__text {
+    position: relative;
+  }
+
+  &__greeting {
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    top: -11.5rem;
+    left: -3rem;
+    font-size: 15rem;
+    font-weight: 900;
+    color: rgba($main-yellow, 0.5);
+    z-index: -2;
+  }
+}

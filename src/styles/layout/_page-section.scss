@@ -1,0 +1,14 @@
+.page-section {
+  padding: 2rem 0 0 1rem;
+  -webkit-animation: 3.5s ease 0s normal forwards 1 slideDown;
+  animation: 3.5s ease 0s normal forwards 1 slideDown;
+  width: 83%;
+  margin: 0 auto;
+  @include respond(largeTablet) {
+    width: 85%;
+  }
+  @include respond(largePhone) {
+    padding: 0.5rem 0;
+    width: 90%;
+  }
+}

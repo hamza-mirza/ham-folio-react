@@ -1,0 +1,83 @@
+.header {
+  background-image: linear-gradient(315deg, $main-yellow-dark 0%, $main-yellow 80%);
+  padding: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+  -webkit-animation: 3.5s ease 0s normal forwards 1 clip;
+  animation: 3.5s ease 0s normal forwards 1 clip;
+
+  @include respond(tablet) {
+    animation: none;
+    -webkit-animation: none;
+    padding-left: 0;
+  }
+
+  @include respond(largePhone) {
+    padding: 2.5rem 0;
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-left: 6.4rem;
+    -webkit-animation-name: moveInLeft;
+    animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+
+    @include respond(tablet) {
+      margin-left: 4.5rem;
+    }
+
+    @include respond(largePhone) {
+      font-size: 3rem;
+      margin-left: 0;
+      display: inline;
+    }
+  }
+
+  &__title-bottom {
+    display: block;
+    -webkit-animation-name: moveInLeft;
+    animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    @include respond(largePhone) {
+      display: inline;
+    }
+  }
+
+  &__content-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    @include respond(largePhone) {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    animation: 2s ease 0s normal forwards 1 fadein;
+    @include respond(tablet) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__location {
+    -webkit-animation: 2.5s ease 0s normal forwards 1 slideUp;
+    animation: 2.5s ease 0s normal forwards 1 slideUp;
+    font-size: 1.2rem;
+    font-weight: 100;
+    @include respond(tablet) {
+      font-weight: 500;
+    }
+  }
+}

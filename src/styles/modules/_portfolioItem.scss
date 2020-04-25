@@ -1,0 +1,39 @@
+.portfolio-item {
+  width: 66%;
+  @include respond(largeTablet) {
+    width: 86%;
+  }
+  @include respond(largePhone) {
+    width: 100%;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 3px 15px -5px rgba(0,0,0,0.75);
+    margin: 2rem 0;
+    border-radius: 3px;
+    @include respond(largeTablet) {
+      width: 80%;
+    }
+  }
+
+  &__link:link, &__link:visited {
+    color: $main-yellow-dark;
+    text-decoration: none;
+  }
+  &__link:hover, &__link:active {
+    color: $main-yellow;
+  }
+
+  &__button {
+    color: $main-black;
+    text-align: center;
+    background-color: $main-yellow;
+    padding: 0.5rem 1.7rem;
+    margin-top: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
