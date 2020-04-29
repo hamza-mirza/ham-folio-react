@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
+import PortfolioBox from "./misc/PortfolioBox"
 import SectionHeading from "./misc/SectionHeading"
 
-const Portfolio = () => (
+const Portfolio = ({setOnHomePage}) => (
   <section className="page-section portfolio">
     <div className="row">
       <SectionHeading text="Portfolio" />
@@ -14,32 +14,32 @@ const Portfolio = () => (
       </div>
       <div className="portfolio__content">
         <div className="row">
-            <div className="col-md-6 portfolio__image-container">
-              <Link to={{pathname: "/portfolioItem/imageApp", state: { title: "Image Search" }}}>
-                <img className="portfolio__image" src={require("../img/project-imageSearch.png")} alt="Photo"/>
-                <h4 className="portfolio__title">Image Search</h4>
-              </Link>
-            </div>
-            <div className="col-md-6 portfolio__image-container">
-              <Link to={{pathname: "/portfolioItem/hamzaShahidPortfolio", state: { title: "Hamza Shahid" }}}>
-                <img className="portfolio__image" src={require("../img/hamzaShahid-thumnail.jpg")} alt="Photo"/>
-                <h4 className="portfolio__title">Hamza Shahid</h4>
-              </Link>
-            </div>
+          <PortfolioBox
+            setOnHomePage={setOnHomePage} 
+            pathname="/portfolioItem/imageApp" 
+            title="Image Search" 
+            imagePath={require("../img/project-imageSearch.png")} 
+          />
+          <PortfolioBox
+            setOnHomePage={setOnHomePage} 
+            pathname="/portfolioItem/hamzaShahidPortfolio" 
+            title="Hamza Shahid" 
+            imagePath={require("../img/hamzaShahid-thumnail.jpg")} 
+          />
         </div>
         <div className="row">
-            <div className="col-md-6 portfolio__image-container">
-              <Link to={{pathname: "/portfolioItem/getFit", state: { title: "GetFit Website" }}}>
-                <img className="portfolio__image" src={require("../img/getFit-thumnail.jpg")} alt="Photo"/>
-                <h4 className="portfolio__title">GetFit Website</h4>
-              </Link>
-            </div>
-            <div className="col-md-6 portfolio__image-container">
-              <Link to={{pathname: "/portfolioItem/weatherApp", state: { title: "Weather Finder" }}}>
-                <img className="portfolio__image" src={require("../img/sample.jpg")} alt="Photo"/>
-                <h4 className="portfolio__title">Weather Finder</h4>
-              </Link>
-            </div>
+          <PortfolioBox
+            setOnHomePage={setOnHomePage} 
+            pathname="/portfolioItem/getFit" 
+            title="GetFit Website" 
+            imagePath={require("../img/getFit-thumnail.jpg")} 
+          />
+          <PortfolioBox
+            setOnHomePage={setOnHomePage} 
+            pathname="/portfolioItem/weatherApp" 
+            title="Weather Finder," 
+            imagePath={require("../img/sample.jpg")} 
+          />
         </div>
       </div>
     </div>

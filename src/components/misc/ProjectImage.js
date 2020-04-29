@@ -10,7 +10,7 @@ const ProjectImage = props => {
         <img className="portfolio-item__image" src={weather} alt="Weather Finder App"/> 
         :
         props.path.includes("image") ? 
-        <img className="portfolio-item__image" src={image} alt="Image Search App"/> 
+        <img className="portfolio-item__image" src={image} alt=" Search App"/> 
         :  
         props.path.includes("hamza") ? 
         <img className="portfolio-item__image" src={hamza} alt="Hamza Shahid"/> 
