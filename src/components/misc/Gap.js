@@ -1,5 +1,5 @@
 import React from "react"
 
-const Gap = () => <span class="skills__gap">&nbsp;</span>
+const Gap = () => <span className="skills__gap">&nbsp;</span>
 
 export default Gap

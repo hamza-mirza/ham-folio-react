@@ -1,8 +1,10 @@
-import React from "react"
-
+import React, {useContext} from "react"
 import { Link } from "react-router-dom"
 
-const PortfolioBox = ({ pathname, title, imagePath, setOnHomePage }) => {
+import State from "../state/State"
+
+const PortfolioBox = ({ pathname, title, imagePath }) => {
+  const { setOnHomePage } = useContext(State)
   return (
     <div onClick={() => setOnHomePage(false)} className="col-md-6 portfolio__image-container">
       <Link to={{pathname, state: { title }}}>

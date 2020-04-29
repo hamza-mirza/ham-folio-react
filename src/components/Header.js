@@ -9,12 +9,7 @@ const Header = (props) => {
       <div className="wrapper">
         <div className="header__content">
           <div className="row">
-            {
-              props.onHomePage ?
-              <HeaderMain onHomePage={props.onHomePage} setOnHomePage={props.setOnHomePage} />
-              :
-              <HeaderSecondary onHomePage={props.onHomePage} setOnHomePage={props.setOnHomePage} />
-            }
+            { props.onHomePage ? <HeaderMain/> : <HeaderSecondary/> }
           </div>
         </div>
       </div>
